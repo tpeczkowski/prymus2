@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <form @submit.prevent="add()">
-      <label>Firstname</label>
-      <input type="text" v-model="newParticipant.firstname">
+  <div style="width: 400px; margin-right: auto;
+  margin-left: auto">
+    <form class="form-group" @submit.prevent="add()">
+      <label for="formGroupExampleInput">Firstname</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" v-model="newParticipant.firstname">
       <br>
-      <label>Lastname</label>
-      <input type="text" v-model="newParticipant.lastname">
+      <label for="formGroupExampleInput">Lastname</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" v-model="newParticipant.lastname">
       <br>
-      <button>Add new participant</button>
+      <button class="btn btn-primary">Add new participant</button>
     </form>
   </div>
 </template>

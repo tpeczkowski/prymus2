@@ -7,7 +7,7 @@
       </div>
     </div>
     
-    <h3>New participant</h3>
+    <h3 style="text-align: center">New participant</h3>
     <new-participant-form @added="addNewParticipant($event)"></new-participant-form>
   </div>
 </template>
@@ -32,7 +32,8 @@
         }
         this.participants.push(newParticipant);
         this.newParticipant = {};
-      }
+      },
+      
     }
   };
 </script>
@@ -42,9 +43,11 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  
   color: #2c3e50;
   margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
 }
 #app > ul
 {
